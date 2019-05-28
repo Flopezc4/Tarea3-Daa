@@ -20,7 +20,7 @@ public class Ordenamiento {
 
         for (int i = 0; i < arreglo.length; i++) {
 
-            arreglo[i] = (int) (Math.random() * 100);
+            arreglo[i] = (int) (Math.random() * 1000);
 
         }
 
