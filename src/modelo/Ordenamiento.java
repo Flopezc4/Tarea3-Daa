@@ -11,58 +11,56 @@ import Sorted.AlgoritmoOrdenamiento;
 
 public class Ordenamiento {
 
-    public MergeSort merge;
-    public QuickSort quick;
-    public AlgoritmoOrdenamiento insert;
-    public static AlgoritmoOrdenamiento arraysort;
+	public MergeSort merge;
+	public QuickSort quick;
+	public AlgoritmoOrdenamiento insert;
+	public static AlgoritmoOrdenamiento arraysort;
 
-    public void NumerosRandom(int[] arreglo) {
+	public void NumerosRandom(int[] arreglo) {
 
-        for (int i = 0; i < arreglo.length; i++) {
+		for (int i = 0; i < arreglo.length; i++) {
 
-            arreglo[i] = (int) (Math.random() * 1000);
+			arreglo[i] = (int) (Math.random() * 100000);
 
-        }
+		}
 
-    }
+	}
 
-    public void NumerosOrdenados(int[] arreglo) {
+	public void NumerosOrdenados(int[] arreglo) {
 
-        for (int i = 0; i < arreglo.length; i++) {
-            arreglo[i] = i;
+		for (int i = 0; i < arreglo.length; i++) {
+			arreglo[i] = i;
 
-        }
+		}
 
-    }
+	}
 
-    public void OrdenarPorQuick(int[] arreglo) {
-        quick = new QuickSort();
-        quick.Sort(arreglo);
-    }
+	public void OrdenarPorQuick(int[] arreglo) {
+		quick = new QuickSort();
+		quick.Sort(arreglo);
+	}
 
-    public void OrdenarPorMerge(int[] arreglo) {
-        merge = new MergeSort();
-        merge.Sort(arreglo);
-    }
+	public void OrdenarPorMerge(int[] arreglo) {
+		merge = new MergeSort();
+		merge.Sort(arreglo);
+	}
 
-    // ArraySort
-    public static void sortJava(int[] arreglo) {
- 
-        AlgoritmoOrdenamiento.sortJava(arreglo);
-    }
+	// ArraySort
+	public static void sortJava(int[] arreglo) {
 
-    // CollectionSort
-    public static void collectionSortJava(int[] arreglo) {
+		AlgoritmoOrdenamiento.sortJava(arreglo);
+	}
 
-        AlgoritmoOrdenamiento.collectionSortJava(arreglo);
-    }
+	// CollectionSort
+	public static void collectionSortJava(int[] arreglo) {
 
-    // InsertionSort
-    public void insertionSortArray(int[] arreglo) {
+		AlgoritmoOrdenamiento.collectionSortJava(arreglo);
+	}
 
-        AlgoritmoOrdenamiento.insertionSortArray(arreglo);
-    }
+	// InsertionSort
+	public void insertionSortArray(int[] arreglo) {
+
+		AlgoritmoOrdenamiento.insertionSortArray(arreglo);
+	}
 
 }
-
-
